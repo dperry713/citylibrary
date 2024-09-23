@@ -21,7 +21,7 @@ def main():
         if choice == '1':
             title = input("Enter book title: ")
             author = input("Enter book author: ")
-            book = Book(title, author)
+            book = library.create_book(title, author)
             library.add_book(book)
             print(f"Book '{title}' by {author} added to the library.")
 
